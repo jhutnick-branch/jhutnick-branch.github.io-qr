@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <!-- Branch Web SDK script -->
+    <script>
+        // load Branch
+        (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener banner closeBanner closeJourney data deepview deepviewCta first init link logout removeListener setBranchViewData setIdentity track trackCommerceEvent logEvent disableTracking getBrowserFingerprintId crossPlatformIds lastAttributedTouchData setAPIResponseCallback qrCode".split(" "), 0);
+        // init Branch
+        branch.init('key_live_ozpgeobWoV1PyOAvLLf5lomdwva66WYq');
+    </script>
+    <!-- JavaScript file -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>QR Code Generator</h1>
+
+    <!-- Button to trigger the QR code generation -->
+    <button id="generateQRButton">Generate QR Code</button>
+
+    <!-- Container for the QR code image -->
+    <div id="qrCodeContainer">
+        <!-- The QR code image will be inserted here -->
+    </div>
+    
+    <!-- Download Button -->
+    <button id="downloadQRButton" style="display: none;">Download QR Code</button>
+
+</body>
+</html>

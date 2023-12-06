@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- Branch meta data -->
+   <meta name="branch:deeplink:$deeplink_path" content="nav" />
+   <meta name="branch:deeplink:category" content="shoes" />
+   <meta name="branch:deeplink:id" content="35" />
+   <meta name="branch:deeplink:categoryId" content="5678" />
+   <meta name="branch:deeplink:productId" content="1234" />
+   <meta name="branch:deeplink:productView" content="true" />
+   <!-- Load Branch Web SDK -->
+   <script>
+      (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode autoAppIndex banner closeBanner closeJourney creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode trackCommerceEvent logEvent disableTracking qrCode".split(" "), 0);
+         // init Branch
+      branch.init('key_live_ozpgeobWoV1PyOAvLLf5lomdwva66WYq');
+   </script>
+   <!-- End Load Branch Web SDK -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>My Test Website</title>
+   <script src="events.js"></script>
+   <meta charset="UTF-8">
+   <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .button-container button {
+         background-color: #4CAF50; /* Green background */
+         border: none;
+         color: white;
+         padding: 15px 32px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 2px;
+         transition-duration: 0.4s;
+         cursor: pointer;
+         border-radius: 8px; /* Rounded corners */
+         box-shadow: 0 4px #999;
+      }
+      .button-container button:hover {
+         background-color: #45a049; /* Darker green background */
+         box-shadow: 0 5px #666;
+         transform: translateY(-2px);
+      }
+  </style>
+</head>
+<body>
+   <!-- Events for the Branch Web SDK -->
+   <main>
+      <h1>My Website</h1>
+      <p>A test website created for testing.</p>
+      <span id="demo">Branch Link Placeholder Text</span>
+      <div class="button-container">
+         <button onclick="doLogin()">Log In</button>
+         <button onclick="doLogout()">Log Out</button>
+         <button onclick="readDeeplinkData()">Read Deeplink Data</button>
+         <button onclick="completedRegistration()">Complete Registration event</button>
+         <button onclick="customEvent()">Custom event</button>
+         <button onclick="addToCart()">Add To Cart event</button>
+         <button onclick="purchaseComplete()">Confirm Purchases event</button>
+         <button type="button" onclick="displayPhrase()">Create Branch Link</button>
+         <button onclick="location.href='https://eduardo.app.link/gSnbKCEsiCb'" type="button">
+         Branch Link to /mysecondpage</button>
+         <button onclick="location.href='https://bit.ly/3RckqXT'" type="button">
+         Bit.ly to current page</button>
+      </div>
+   </main>
+   <!-- End Events for the Branch Web SDK -->
+</body>
+</html>
